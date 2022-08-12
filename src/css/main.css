@@ -1,12 +1,16 @@
 @import "./background-animation.css";
 @import "./color.css";
 @import "./header.css";
+@import "./main-section.css";
 
 :root {
   --border-radius: 0.7rem;
   --box-shadow: 6px 6px 8px 5px rgba(0, 0, 0, 0.2);
+  --box-shadow-small: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow-small-hover: 0 0 5px 3px rgba(0, 0, 0, 0.2);
   --padding: 1.5rem;
   --margin: 1rem;
+  --border: 2px solid var(--border-color);
   font-size: 18px;
 }
 
@@ -14,6 +18,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  padding: calc(var(--padding) / 6);
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--border-radius);
+  transition: all 250ms;
+  border-bottom: transparent;
+}
+
+a:hover {
+  border-bottom: var(--border);
 }
 
 ul {
@@ -38,4 +55,18 @@ aside {
   border-top: 2px solid var(--border-color);
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  box-shadow: var(--box-shadow-small);
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+button:hover {
+  box-shadow: var(--box-shadow-small-hover);
 }
