@@ -1,0 +1,37 @@
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.background radialGradient stop:first-child,
+.background linearGradient stop:first-child {
+  animation: change-color 30s infinite;
+}
+
+.rotate {
+  animation: rotate 500s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes change-color {
+  0% {
+    stop-color: #ffd37e;
+  }
+  50% {
+    stop-color: #ff7ee9;
+  }
+  100% {
+    stop-color: #ffd37e;
+  }
+}
