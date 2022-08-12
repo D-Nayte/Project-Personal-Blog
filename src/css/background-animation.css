@@ -1,6 +1,8 @@
 .background {
   position: fixed;
-  width: 100vw;
+  top: 0;
+  left: 0;
+  min-width: 1080px;
   height: 100vh;
   opacity: 0.6;
   z-index: -1;

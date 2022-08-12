@@ -1,7 +1,41 @@
 @import "./background-animation.css";
+@import "./color.css";
+@import "./header.css";
+
+:root {
+  --border-radius: 0.7rem;
+  --box-shadow: 6px 6px 8px 5px rgba(0, 0, 0, 0.2);
+  --padding: 1.5rem;
+  --margin: 1rem;
+  font-size: 18px;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: grid;
+  padding: var(--padding);
+}
+
+header,
+section,
+footer,
+aside {
+  padding: var(--padding);
+  position: relative;
+  box-shadow: var(--box-shadow);
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+  border-left: 2px solid var(--border-color);
+  border-top: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
 }
