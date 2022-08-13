@@ -2,8 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 1080px;
-  height: 100vh;
+  min-width: 1920px;
   opacity: 0.6;
   z-index: -1;
 }
@@ -14,7 +13,7 @@
 }
 
 .rotate {
-  animation: rotate 500s infinite;
+  animation: rotate 60s infinite;
 }
 
 @keyframes rotate {

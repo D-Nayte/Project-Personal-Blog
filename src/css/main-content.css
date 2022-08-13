@@ -1,3 +1,4 @@
+/* Landing page Post overwiev ---------------------------------------------*/
 main section article,
 main aside article {
   gap: calc(var(--padding) / 2);
@@ -49,6 +50,8 @@ main aside article {
   gap: calc(var(--padding) / 4);
 }
 
+/* Sidebar with contacts, related posts and Tags------------------------- */
+/*    Categories section*/
 .categories {
   display: flex;
   width: 100%;
@@ -69,6 +72,7 @@ main aside article {
   border-bottom: var(--border);
 }
 
+/*    Related posts section*/
 .recent-posts {
   display: flex;
   flex-direction: column;
@@ -84,6 +88,7 @@ main aside article {
   box-shadow: none;
   background-color: transparent;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .recent-posts img {
@@ -92,6 +97,7 @@ main aside article {
   border-radius: var(--border-radius);
 }
 
+/*    Tags section */
 .tags ul {
   display: flex;
   flex-wrap: wrap;
@@ -101,4 +107,48 @@ main aside article {
   margin: var(--margin);
   margin-left: 0;
   font-weight: bold;
+}
+/* Contact me section----------------------------------------------- */
+.contact-me {
+  background-color: var(--off-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--padding) / 4);
+}
+
+.contact-me h2 {
+  font-size: 2rem;
+}
+
+.contact-me ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--padding) / 2);
+  width: 100%;
+}
+
+.contact-me li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  gap: calc(var(--padding) / 2);
+  background-color: var(--background-color);
+  padding: calc(var(--padding));
+  border-radius: var(--border-radius);
+}
+
+.contact-me li i {
+  font-size: 2rem;
+  flex-grow: 1;
+  color: var(--text-color);
+}
+
+.contact-me li h3 {
+  font-size: 1.2rem;
+}
+
+.contact-me li div {
+  flex: 6;
 }

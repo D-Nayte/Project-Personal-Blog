@@ -4,19 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/global.css" />
+    <link rel="stylesheet" href="./src/css/blogpost.css" />
+
     <title>Blog Posts</title>
   </head>
   <body>
+    <div class="background">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1500">
+        <rect fill="#FFFFFF" width="2000" height="1500" />
+        <defs>
+          <radialGradient id="a" gradientUnits="objectBoundingBox">
+            <stop offset="0" />
+            <stop offset="1" stop-color="#FFFFFF" />
+          </radialGradient>
+          <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="0" y1="750" x2="1550" y2="750">
+            <stop offset="0" stop-color="#ffe9bf" />
+            <stop offset="1" stop-color="#FFFFFF" />
+          </linearGradient>
+          <path
+            id="s"
+            fill="url(#b)"
+            d="M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z"
+          />
+          <g id="g">
+            <use href="#s" transform="scale(0.12) rotate(60)" />
+            <use href="#s" transform="scale(0.2) rotate(10)" />
+            <use href="#s" transform="scale(0.25) rotate(40)" />
+            <use href="#s" transform="scale(0.3) rotate(-20)" />
+            <use href="#s" transform="scale(0.4) rotate(-30)" />
+            <use href="#s" transform="scale(0.5) rotate(20)" />
+            <use href="#s" transform="scale(0.6) rotate(60)" />
+            <use href="#s" transform="scale(0.7) rotate(10)" />
+            <use href="#s" transform="scale(0.835) rotate(-40)" />
+            <use href="#s" transform="scale(0.9) rotate(40)" />
+            <use href="#s" transform="scale(1.05) rotate(25)" />
+            <use href="#s" transform="scale(1.2) rotate(8)" />
+            <use href="#s" transform="scale(1.333) rotate(-60)" />
+            <use href="#s" transform="scale(1.45) rotate(-30)" />
+            <use href="#s" transform="scale(1.6) rotate(10)" />
+          </g>
+        </defs>
+        <g transform="rotate(0 0 0)">
+          <g transform="rotate(0 0 0)">
+            <circle fill="url(#a)" r="3000" />
+            <g opacity="0.5">
+              <circle fill="url(#a)" r="2000" />
+              <circle fill="url(#a)" r="1800" />
+              <circle fill="url(#a)" r="1700" />
+              <circle fill="url(#a)" r="1651" />
+              <circle fill="url(#a)" r="1450" />
+              <circle fill="url(#a)" r="1250" />
+              <circle fill="url(#a)" r="1175" />
+              <circle fill="url(#a)" r="900" />
+              <circle fill="url(#a)" r="750" />
+              <circle fill="url(#a)" r="500" />
+              <circle fill="url(#a)" r="380" />
+              <circle fill="url(#a)" r="250" />
+            </g>
+            <g class="rotate">
+              <use href="#g" transform="rotate(10)" />
+              <use href="#g" transform="rotate(120)" />
+              <use href="#g" transform="rotate(240)" />
+            </g>
+            <circle fill-opacity="0" fill="url(#a)" r="3000" />
+          </g>
+        </g>
+      </svg>
+    </div>
+
     <header>
-      <nav>
+      <div>
         <h2>PRB</h2>
-        <ul>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </ul>
+        <nav>
+          <p>&#9777;</p>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
         <button>Sign Up</button>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -24,16 +94,14 @@
         <article id="post">
           <a href="index.html"><p>&larr; Back to blog</p></a>
 
-          <h1>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum atque laborum maiores animi nisi modi, nemo quibusdam natus dolorem! Praesentium.
-          </h1>
+          <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
 
           <div class="author-wrapper">
-            <img src="" alt="profile-picture" />
+            <img class="avatar-picture" src="./src/images/avatar.jpg" alt="Profile-picture" />
             <address class="author">
-              <a rel="author" href="#">Andy Schunke</a>
+              <p rel="author" href="#">Andy Schunke</p>
             </address>
-            <time datetime="2022-02-10"> February 10th</time>
+            <time datetime="2022-02-10"> February 10th 2022</time>
           </div>
 
           <h2>
@@ -42,7 +110,7 @@
           </h2>
 
           <picture>
-            <img src="" alt="" />
+            <img src="./src/images/clouds.jpg" alt="blue Clouds" />
           </picture>
 
           <p>
@@ -60,14 +128,19 @@
           <p>
             <em
               >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque repellat quis nostrum dolore quod molestiae labore porro officiis
-              impedit?</em
+              impedit?
+            </em>
+          </p>
+
+          <p class="strong">
+            <strong
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum unde illum nulla, provident in ab eligendi explicabo vel
+              voluptates.</strong
             >
           </p>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum unde illum nulla, provident in ab eligendi explicabo vel voluptates.</p>
-
           <picture>
-            <img src="" alt="" />
+            <img src="./src/images/butterfly.jpg" alt="many Butterflys" />
           </picture>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae atque, a dolor eaque blanditiis.</p>
 
@@ -83,27 +156,30 @@
             nisi ducimus enim illo possimus et consequatur sequi praesentium non rerum?
           </p>
 
-          <div class="social-"></div>
-        </article>
-
-        <article class="about-author">
-          <div class="social-links">
+          <div class="random-links">
             <ul>
-              <li>Vide</li>
-              <li>Legimus</li>
-              <li>Consectetuer</li>
+              <li><a href="#">Vide</a></li>
+              <li><a href="#">Legimus</a></li>
+              <li><a href="#">Consectetuer</a></li>
             </ul>
             <div class="share-socials">
               <h4>Share on:</h4>
               <ul class="socials">
-                <li>Twitch</li>
-                <li>Twitter</li>
-                <li>Insta</li>
+                <li>
+                  <a><i class="fa-brands fa-twitch"></i></a>
+                </li>
+                <li>
+                  <a><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
               </ul>
             </div>
           </div>
+
           <div class="post-author-wrapper">
-            <img src="" alt="" />
+            <img class="avatar-picture" src="./src/images/avatar.jpg" alt="avatar picture" />
             <div>
               <h4>Author</h4>
               <p class="name">Andy Schunke</p>
@@ -113,34 +189,36 @@
         </article>
       </section>
 
-      <section class="relatet-posts">
+      <section id="posts">
+        <h2>Related</h2>
         <article>
           <h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum atque laborum maiores animi nisi modi, nemo quibusdam natus dolorem! Praesentium.
           </h2>
           <figure>
-            <img src="" alt="" />
+            <img src="./src/images/butterfly.jpg" alt="blue butterflys" />
             <figcaption>Picture discription</figcaption>
           </figure>
           <div class="author-wrapper">
-            <img src="" alt="profile-picture" />
+            <img class="avatar-picture" src="./src/images/avatar.jpg" alt="Profile-picture" />
             <address class="author">
-              <a rel="author" href="#">Andy Schunke</a>
+              <p rel="author" href="#">Andy Schunke</p>
             </address>
           </div>
         </article>
+
         <article>
           <h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum atque laborum maiores animi nisi modi, nemo quibusdam natus dolorem! Praesentium.
           </h2>
           <figure>
-            <img src="" alt="" />
+            <img src="./src/images/tree.jpg" alt="big tree after sunset" />
             <figcaption>Picture discription</figcaption>
           </figure>
           <div class="author-wrapper">
-            <img src="" alt="profile-picture" />
+            <img class="avatar-picture" src="./src/images/avatar.jpg" alt="Profile-picture" />
             <address class="author">
-              <a rel="author" href="#">Andy Schunke</a>
+              <p rel="author" href="#">Andy Schunke</p>
             </address>
           </div>
         </article>
@@ -216,26 +294,26 @@
         <h2>Contact me</h2>
         <ul>
           <li>
+            <i class="fa-solid fa-house-user"></i>
             <div>
-              "icON"
               <h3>Office</h3>
-              <address class="contact-address">Dipsun amet los, 07407</address>
+              <address class="address">Dipsun amet los, 07407</address>
             </div>
           </li>
           <li>
+            <i class="fa-solid fa-mobile"></i>
             <div>
-              "icON"
               <h3>Call me</h3>
-              <address class="contact-address">
-                <a href="tel:+4918684354148">(+49)18684354148</a>
+              <address class="phonenumber">
+                <a href="tel:+4915555354148">(+49)15555354148</a>
               </address>
             </div>
           </li>
           <li>
+            <i class="fa-solid fa-envelope-open"></i>
             <div>
-              "icON"
               <h3>Write me</h3>
-              <address class="contact-address">
+              <address class="email">
                 <a href="mailto:muster@man.com">muster@man.com</a>
               </address>
             </div>
@@ -243,5 +321,51 @@
         </ul>
       </section>
     </main>
+    <footer>
+      <article class="socials-wrapper">
+        <h2>PRB</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eius recusandae deleniti aspernatur harum quas id dolorum animi iste eaque.</p>
+        <ul class="socials">
+          <li>
+            <a href=""><i class="fa-brands fa-twitch"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+        </ul>
+      </article>
+      <article class="related-links">
+        <ul>
+          <li><h3>Lorem</h3></li>
+          <li>Dolor</li>
+          <li>Ipsum</li>
+          <li>Sit</li>
+          <li>Amet</li>
+          <li>Consectetur</li>
+        </ul>
+        <ul>
+          <li><h3>Adipisicing</h3></li>
+          <li>Elit</li>
+          <li>Ipsam</li>
+          <li>ARepellat</li>
+          <li>Iste</li>
+        </ul>
+        <ul>
+          <li><h3>Cumque</h3></li>
+          <li>Dolore</li>
+          <li>Adipisci</li>
+          <li>Temporibus</li>
+          <li>Beatae</li>
+          <li>Neque</li>
+        </ul>
+      </article>
+
+      <article class="copyright">
+        <p>&copy; Andy Schunke, 2022. All rights reserved</p>
+      </article>
+    </footer>
   </body>
 </html>

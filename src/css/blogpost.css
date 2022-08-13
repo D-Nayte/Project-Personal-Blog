@@ -1,0 +1,107 @@
+.post-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-section h3,
+.post-section h1,
+.post-section h2 {
+  margin-top: calc(var(--margin) * 4);
+  margin-bottom: calc(var(--margin) / 2);
+}
+
+.post-section h1 {
+  color: var(--text-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.post-section h2,
+.post-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.post-section p {
+  margin: calc(var(--margin) / 2) 0;
+}
+
+.post-section img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin: var(--margin) 0;
+}
+
+.post-section .strong {
+  border-left: 5px solid var(--off-color);
+  padding-left: var(--padding);
+  margin: var(--margin) 0 0 0;
+}
+
+.post-section p ~ ul {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: var(--margin) 0;
+}
+
+.post-section p ~ ul li::before {
+  content: "\2022";
+  margin-right: var(--margin);
+  color: var(--off-color);
+  font-size: 1.5rem;
+}
+
+.post-section .random-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--margin);
+  padding: calc(var(--padding) * 2) 0;
+}
+
+.random-links ul:first-child {
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.random-links .share-socials {
+  display: flex;
+  gap: var(--margin);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  padding: calc(var(--padding) / 2);
+}
+
+.random-links .share-socials ul {
+  display: flex;
+  gap: var(--margin);
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.post-author-wrapper .avatar-picture[src="./src/images/avatar.jpg"] {
+  width: 100px;
+  height: 100px;
+}
+
+.post-author-wrapper {
+  display: flex;
+  border-top: 2px solid var(--off-color);
+  border-bottom: 2px solid var(--off-color);
+  padding: var(--padding) 0;
+  gap: var(--margin);
+}
+
+.post-author-wrapper .name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.post-author-wrapper img {
+  flex: 0 0 100px;
+}

@@ -1,7 +1,9 @@
-header {
+body header {
   display: flex;
   flex-direction: column;
   color: var(--text-color);
+  background-color: var(--off-color);
+  z-index: 1;
 }
 
 header div {
