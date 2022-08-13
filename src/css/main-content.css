@@ -1,6 +1,7 @@
 /* Landing page Post overwiev ---------------------------------------------*/
 main section article,
-main aside article {
+main aside article,
+.card {
   gap: calc(var(--padding) / 2);
   background-color: var(--background-color);
   padding: calc(var(--padding) / 2);
@@ -69,6 +70,7 @@ main aside article {
 
 .categories thead {
   text-align: left;
+  font-size: 1.5rem;
 }
 
 .categories table td {
@@ -85,7 +87,7 @@ main aside article {
   order: -1;
 }
 
-.recent-posts article {
+.recent-posts .card {
   display: flex;
   align-items: flex-start;
   box-shadow: none;

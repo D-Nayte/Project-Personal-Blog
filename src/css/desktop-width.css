@@ -70,7 +70,8 @@ footer {
   background: linear-gradient(0deg, var(--off-color) 20%, var(--background-color) 26%);
 }
 
-footer article {
+footer .socials-wrapper,
+footer .related-links {
   flex: 2 0 40%;
 }
 
