@@ -101,7 +101,7 @@ time {
 }
 
 /* smaller Font size for very small Devices */
-@media (max-width: 380px) {
+@media (max-width: 425px) {
   :root {
     font-size: 12px;
   }
