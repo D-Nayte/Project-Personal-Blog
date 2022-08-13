@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--padding) * 2) !important;
+}
+
+/* Landing page main section----------------------------------------- */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: var(--margin);
+  grid-template-areas:
+    "post post side"
+    "post post side"
+    "contact contact contact";
+}
+
+#posts {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  gap: var(--margin);
+  grid-area: post;
+}
+
+#posts article {
+  flex: 1 1 40%;
+}
+
+#posts nav {
+  flex-basis: 100%;
+  align-self: flex-end;
+}
+
+/* Landing page sidebar */
+aside {
+  grid-area: side;
+}
+
+/* Landing page Contact area */
+.contact-me {
+  grid-area: contact;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-me ul {
+  display: grid;
+  gap: var(--margin);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "contact contact contact"
+    "item item item";
+}
+
+.contact-me ul li:first-child {
+  margin-left: var(--padding);
+}
+.contact-me ul li:last-child {
+  margin-right: var(--padding);
+}
+
+/* Landing page footer area */
+footer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: linear-gradient(0deg, var(--off-color) 20%, var(--background-color) 26%);
+}
+
+footer article {
+  flex: 2 0 40%;
+}
+
+.copyright {
+  flex-basis: 100%;
+}
+
+/* Blog Posts side------------------------------------------ */
+#post-section-wrapper {
+  grid-template-areas:
+    "post post side"
+    "post post side"
+    "related related side"
+    "contact contact contact";
+}
+
+.post-section {
+  grid-area: post;
+}
+
+#post-section-wrapper .related {
+  grid-area: related;
+  flex-direction: row;
+}
+
+#post-section-wrapper .related h2 {
+  flex-basis: 100%;
+}
