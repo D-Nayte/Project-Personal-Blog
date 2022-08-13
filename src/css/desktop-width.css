@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  padding: calc(var(--padding) * 8) !important;
+  padding: calc(var(--padding) * 7) !important;
   padding-top: calc(var(--padding) * 2) !important;
   padding-bottom: 0;
 }
@@ -59,7 +59,7 @@ aside {
 }
 
 .contact-me i {
-  font-size: 3.5rem !important;
+  font-size: clamp(1rem, 3vw, 3.5rem) !important;
 }
 
 .contact-me ul li:first-child {
@@ -105,4 +105,14 @@ footer .related-links {
 
 #post-section-wrapper .related h2 {
   flex-basis: 100%;
+}
+
+@media (max-width: 1240px) {
+  .contact-me li {
+    padding: var(--padding);
+  }
+
+  body {
+    padding: calc(var(--padding) * 3) !important;
+  }
 }
