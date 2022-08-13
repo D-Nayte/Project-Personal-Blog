@@ -72,6 +72,10 @@ button {
   transition: all 250ms;
 }
 
+.hide {
+  display: none;
+}
+
 button:hover {
   box-shadow: var(--box-shadow-small-hover);
 }

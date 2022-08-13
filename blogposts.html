@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -88,16 +88,17 @@
     </header>
     <main id="post-section-wrapper">
       <section class="post-section">
+        <h1 class="hide">Actuall Post</h1>
         <article id="post">
           <a href="index.html"><p>&larr; Back to blog</p></a>
-          <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-          <card class="author-wrapper">
+          <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+          <div class="author-wrapper">
             <img class="avatar-picture" src="./src/images/avatar.jpg" alt="Profile-picture" />
             <address class="author">
               <p rel="author">Andy Schunke</p>
             </address>
             <time datetime="2022-02-10"> February 10th 2022</time>
-          </card>
+          </div>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nihil, impedit, inventore tenetur recusandae dolor aliquam maxime ducimus non quod
             iure amet tempora! Eius ex, blanditiis sed modi quae illum.
@@ -123,7 +124,8 @@
           </p>
           <p class="strong">
             <strong>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi molestias harum sapiente ipsum ex corporis rerum provident, perspiciatis laudantium id nesciunt amet officia fugiat possimus nemo qui esse quisquam dolore.</strong
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi molestias harum sapiente ipsum ex corporis rerum provident, perspiciatis
+              laudantium id nesciunt amet officia fugiat possimus nemo qui esse quisquam dolore.</strong
             >
           </p>
           <picture>
@@ -193,45 +195,49 @@
         </article>
         <article>
           <a href="blogposts.html">
-          <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum atque laborum maiores animi nisi modi, nemo quibusdam natus dolorem! Praesentium.
-          </h2>
-          <figure>
-            <img src="./src/images/tree.jpg" alt="big tree after sunset" />
-            <figcaption>Picture discription</figcaption>
-          </figure>
-          <div class="author-wrapper">
-            <img class="avatar-picture" src="./src/images/avatar.jpg" alt="Profile-picture" />
-            <address class="author">
-              <p rel="author">Andy Schunke</p>
-            </address>
-          </div>
+            <h2>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum atque laborum maiores animi nisi modi, nemo quibusdam natus dolorem!
+              Praesentium.
+            </h2>
+            <figure>
+              <img src="./src/images/tree.jpg" alt="big tree after sunset" />
+              <figcaption>Picture discription</figcaption>
+            </figure>
+            <div class="author-wrapper">
+              <img class="avatar-picture" src="./src/images/avatar.jpg" alt="Profile-picture" />
+              <address class="author">
+                <p rel="author">Andy Schunke</p>
+              </address>
+            </div>
+          </a>
         </article>
-      </a>
       </section>
       <aside>
         <article class="categories">
+          <h2 class="hide">Categories</h2>
           <table>
             <thead>
               <tr>
-                <th colspan="2"><h2>Categories</h2></th>
+                <th>Categories</th>
+                <th></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Harum</td>
+                <td colspan="2">Harum</td>
                 <td>42</td>
               </tr>
               <tr>
-                <td>Harum</td>
+                <td colspan="2">Lorem</td>
                 <td>42</td>
               </tr>
               <tr>
-                <td>Harum</td>
+                <td colspan="2">Isun</td>
                 <td>42</td>
               </tr>
               <tr>
-                <td>Harum</td>
+                <td colspan="2">Dolor</td>
                 <td>42</td>
               </tr>
             </tbody>
@@ -239,29 +245,29 @@
         </article>
         <article class="recent-posts">
           <h2>Recent post</h2>
-          <article>
+          <div class="card">
             <img src="./src/images/clouds.jpg" alt="blue Clouds" />
-            <figcaption>
+            <div class="post-description">
               <p>Post description Lorem ipsum dolor sit amet.</p>
               <time datetime="2022-02-10"> February 10th</time>
-            </figcaption>
-          </article>
-          <article>
+            </div>
+          </div>
+          <div class="card">
             <img src="./src/images/flowers.jpg" alt="Filed of Flowers" />
-            <figcaption>
+            <div class="post-description">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit similique, ut amet totam aspernatur quia tenetur iusto dolore tempora nulla!.
               </p>
               <time datetime="2022-03-10"> March 15th</time>
-            </figcaption>
-          </article>
-          <article>
+            </div>
+          </div>
+          <div class="card">
             <img src="./src/images/night-sky.jpg" alt="clear night Sky" />
-            <figcaption>
+            <div class="post-description">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab accusantium repellendus aliquid consequatur voluptatum.</p>
               <time datetime="2022-04-10"> April 8th</time>
-            </figcaption>
-          </article>
+            </div>
+          </div>
         </article>
         <article class="tags">
           <h2>Tags</h2>
@@ -351,9 +357,9 @@
           <li>Neque</li>
         </ul>
       </article>
-      <article class="copyright">
+      <div class="copyright">
         <p>&copy; Andy Schunke, 2022. All rights reserved</p>
-      </article>
+      </div>
     </footer>
   </body>
 </html>
