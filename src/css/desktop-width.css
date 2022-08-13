@@ -1,7 +1,9 @@
 body {
   display: flex;
   flex-direction: column;
-  padding: calc(var(--padding) * 2) !important;
+  padding: calc(var(--padding) * 8) !important;
+  padding-top: calc(var(--padding) * 2) !important;
+  padding-bottom: 0;
 }
 
 /* Landing page main section----------------------------------------- */
@@ -54,6 +56,10 @@ aside {
   grid-template-areas:
     "contact contact contact"
     "item item item";
+}
+
+.contact-me i {
+  font-size: 3.5rem !important;
 }
 
 .contact-me ul li:first-child {

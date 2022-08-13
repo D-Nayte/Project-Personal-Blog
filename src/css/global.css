@@ -72,6 +72,14 @@ button {
   transition: all 250ms;
 }
 
+a {
+  transition: all 250ms;
+}
+
+a:hover {
+  transform: scale(1.02);
+}
+
 .hide {
   display: none;
 }

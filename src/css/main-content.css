@@ -135,18 +135,17 @@ main aside article,
 
 .contact-me li {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: stretch;
+  justify-content: space-evenly;
+  align-content: center;
   gap: calc(var(--padding) / 2);
   background-color: var(--background-color);
-  padding: calc(var(--padding));
+  padding: calc(var(--padding)) calc(var(--padding) * 2);
   border-radius: var(--border-radius);
 }
 
 .contact-me li i {
   font-size: 2rem;
-  flex-grow: 1;
+  /* flex: 1 2; */
   color: var(--text-color);
 }
 
@@ -154,6 +153,6 @@ main aside article,
   font-size: 1.2rem;
 }
 
-.contact-me li div {
-  flex: 6;
-}
+/* .contact-me li div {
+  flex: 4 1;
+} */
